@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="manifest" href="./manifest.json" />
+    <link rel="stylesheet" href="./assets/lib/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <link rel="shortcut icon" href="./assets/img/icons/favicon.ico" type="image/x-icon">
+
+    <title>Random Quotes Machine</title>
+
+    <script defer src="/__/firebase/6.0.4/firebase-app.js"></script>
+    <script defer src="/__/firebase/init.js"></script>
+
+</head>
+
+<body>
+    <div class="container">
+        <div id="content">
+            <header id="site-header" class="text-center fadein">
+                <h1 class="page-title">Random Quotes Machine</h1>
+                <p>This page help you finding famous inspiring quotes within a few seconds.
+                    <br /> Click on a button below to get a new quote</p>
+            </header>
+            <section id="main" class="text-center flyin">
+                <button id="random-button" class="btn btn-primary btn-lg">New Quote</button>
+
+                <blockquote id="blockquote" class="blockquote flyin">
+                    <p class="quote-text"></p>
+                    <footer class="blockquote-footer">
+                        by
+                        <cite></cite>
+                    </footer>
+                    <p class="share-link-container"><a class="tweet-link btn btn-primary btn-sm"
+                            href="javascript:void(0)" target="_blank">Tweet this</a></p>
+                </blockquote>
+
+                <div style="width:100%;height:100%" id="loader" class="lds-pacman">
+                    <div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
+
+            </section>
+        </div>
+
+        <script src="/assets/js/script.js"></script>
+        <script>
+            if ('serviceWorker' in navigator) {
+                navigator.serviceWorker.register('/sw.js')
+                    .then(() => {
+                        console.log('Service Worker registered.');
+                    })
+            }
+        </script>
+</body>
+
+</html>
