@@ -32,7 +32,7 @@ You can find it here: https://api-project-1008783682307.firebaseapp.com/
 ![Demo App QR Code](qr.png)
 
 ## Contributors
-Weerayut Teja https://www.github.com/wteja
+[Weerayut Teja](https://www.github.com/wteja)
 
 ## Credit
 - [App Icon : Iconfinder.com](https://www.iconfinder.com/icons/532245/bubble_cloud_communicate_communication_speech_speech_bubble_icon)
