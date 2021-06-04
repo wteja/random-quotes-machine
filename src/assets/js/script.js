@@ -11,7 +11,7 @@
                     headers: {
                         // This key just for demonstration, not recommend on production due to the limit of requests.
                         // Generate a new key here (Sign up needed): https://rapidapi.com/andruxnet/api/random-famous-quotes
-                        'X-Mashape-Key': '8VSxu5zbNVmshEfpNbMRRlNlTqTDp1PNKeHjsnSJRrQamRPifi',
+                        'X-Mashape-Key': 'o8XDssKTLRmsheGR8EWmnphNiWZ6p199bqWjsn22msD7T3N8vO',
                         'Accept': 'application/json',
                         'Content-Type': 'application/json'
                     }
