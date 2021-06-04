@@ -5,13 +5,14 @@
             document.querySelector('#loader').style.display = 'block';
             document.querySelector('#blockquote').style.display = 'none';
 
-            fetch('https://andruxnet-random-famous-quotes.p.mashape.com?count=1',
+            fetch('https://andruxnet-random-famous-quotes.p.rapidapi.com?count=1',
                 {
                     method: 'POST',
                     headers: {
                         // This key just for demonstration, not recommend on production due to the limit of requests.
                         // Generate a new key here (Sign up needed): https://rapidapi.com/andruxnet/api/random-famous-quotes
-                        'X-Mashape-Key': 'o8XDssKTLRmsheGR8EWmnphNiWZ6p199bqWjsn22msD7T3N8vO',
+                        'x-rapidapi-key': 'o8XDssKTLRmsheGR8EWmnphNiWZ6p199bqWjsn22msD7T3N8vO',
+                        'x-rapidapi-host': 'andruxnet-random-famous-quotes.p.rapidapi.com',
                         'Accept': 'application/json',
                         'Content-Type': 'application/json'
                     }
