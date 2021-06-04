@@ -29,8 +29,6 @@ serve ./src
 
 You can find it here: https://api-project-1008783682307.firebaseapp.com/
 
-![Demo App QR Code](qr.png)
-
 ## Contributors
 [Weerayut Teja](https://www.github.com/wteja)
 
